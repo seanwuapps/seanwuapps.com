@@ -1,0 +1,26 @@
+:host {
+  display: block;
+  .inner {
+    opacity: 0;
+    transition: transform var(--fade-in-speed, 0.4s) ease,
+      opacity var(--fade-in-speed, 0.4s) ease;
+    &.animated {
+      opacity: 1;
+    }
+    &.up {
+      transform: translate(0, $spacer * 2);
+    }
+    &.left {
+      transform: translate(-$spacer * 2, 0);
+    }
+    &.right {
+      transform: translate($spacer * 2, 0);
+    }
+    &.down {
+      transform: translate(0, -$spacer * 2);
+    }
+    &.animated {
+      transform: translate(0, 0);
+    }
+  }
+}

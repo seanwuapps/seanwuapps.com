@@ -1,0 +1,25 @@
+$colors: (
+  "darkblue": #191d32,
+  "blue": #282f44,
+  "grey": #453a49,
+  "light": #fbdbcf,
+);
+
+:root,
+html {
+  // make colors available as css vars
+  @each $name, $hex in $colors {
+    --color-#{$name}: #{$hex};
+  }
+
+  --base-font-size: 16px;
+}
+
+@function c($name) {
+  @return map-get($colors, $name);
+}
+
+$body-font: "Ubuntu", sans-serif;
+$title-font: "Cormorant", serif;
+
+$spacer: 16px;

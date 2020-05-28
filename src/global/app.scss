@@ -1,0 +1,15 @@
+@import "./variables.scss";
+@import "./colors.scss";
+@import "./typography.scss";
+@import "./grid.scss";
+@import "./utils.scss";
+@import "../../node_modules/normalize.css/normalize.css";
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  background: var(--sc-bg-color);
+  color: var(--sc-text-color);
+  overflow-x: hidden;
+}

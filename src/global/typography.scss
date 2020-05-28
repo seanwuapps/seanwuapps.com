@@ -1,0 +1,41 @@
+// @import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Ubuntu:wght@300&display=swap");
+
+:root,
+html {
+  font-size: var(--base-font-size, 16px);
+}
+
+body {
+  font-family: $body-font;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $title-font;
+}
+
+* {
+  word-wrap: break-word;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+a {
+  color: var(--sc-text-color);
+}
+
+@media (min-width: 576px) {
+  :root,
+  html {
+    font-size: calc(16px + 0.6357vw);
+  }
+  h1 {
+    font-size: 120px;
+  }
+  * {
+    word-wrap: normal;
+  }
+}

@@ -1,0 +1,15 @@
+:root,
+html {
+  --text-color: white;
+  --bg-color: #{c("darkblue")};
+
+  --sc-shadow-color: rgba(0, 0, 0, 0.2);
+  --sc-highlight-color: rgba(255, 255, 255, 0.2);
+  --sc-bg-color: var(--bg-color);
+  --sc-text-color: var(--text-color);
+  --sc-border-radius: 1em;
+  --sc-error-color: #f70d1a;
+  --sc-secondary-color: #646695;
+  --sc-active-color: #c586c0;
+  --app-text-color: white;
+}
