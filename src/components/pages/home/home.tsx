@@ -16,7 +16,7 @@ export class Home {
     },
     {
       side: "right",
-      html: `<p>💻 I'm a web developer in <a href="https://brandinsider.straitstimes.com/visitcanberra/8-interesting-facts-about-australias-capital-city/" target="_blank" rel="nofollow">🗺️Canberra, Australia</a>.</p>`,
+      html: `<p>💻 I'm a web developer in <a href="https://brandinsider.straitstimes.com/visitcanberra/8-interesting-facts-about-australias-capital-city/" target="_blank" rel="noreferrer">🗺️Canberra, Australia</a>.</p>`,
     },
     {
       side: "right",
@@ -24,7 +24,7 @@ export class Home {
     },
     {
       side: "right",
-      html: `<p class="text-center"><a href="https://cordelta.digital" target="_blank" rel="nofollow"><img class="cd-logo" src="${cdLogo}" alt="Cordelta Digital"></a></p>`,
+      html: `<p class="text-center"><a href="https://cordelta.digital" target="_blank" rel="noreferrer"><img class="cd-logo" src="${cdLogo}" alt="Cordelta Digital"></a></p>`,
     },
     {
       side: "right",
