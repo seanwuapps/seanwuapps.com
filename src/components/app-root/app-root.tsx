@@ -56,6 +56,7 @@ export class AppRoot {
                 <sc-button
                   href="https://github.com/seanwuapps"
                   target="_blank"
+                  rel="noreferrer"
                   icon
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -71,6 +72,7 @@ export class AppRoot {
                 <sc-button
                   href="https://codepen.io/deseanwu"
                   target="_blank"
+                  rel="noreferrer"
                   icon
                 >
                   <svg viewBox="0 0 32 32">
@@ -83,6 +85,7 @@ export class AppRoot {
                 <sc-button
                   href="https://www.linkedin.com/in/deseanwu"
                   target="_blank"
+                  rel="noreferrer"
                   icon
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -95,6 +98,7 @@ export class AppRoot {
                 <sc-button
                   href="https://twitter.com/seanwuapps"
                   target="_blank"
+                  rel="noreferrer"
                   icon
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
