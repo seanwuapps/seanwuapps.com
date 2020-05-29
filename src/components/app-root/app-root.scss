@@ -90,12 +90,15 @@
   sc-card {
     --sc-card-outer-padding-y: 20px;
     --sc-card-outer-padding-x: 20px;
+
+    --sc-card-bg-color: #{rgba(c("darkblue"), 0.6)};
     p {
       font-size: 14px;
     }
   }
 
   sc-button {
+    --sc-button-bg-color: #{rgba(c("darkblue"), 0.6)};
     &.icon {
       --sc-button-icon-size: 50px;
       --sc-button-icon-size-inner: 20px;

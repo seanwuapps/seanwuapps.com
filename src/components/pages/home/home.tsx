@@ -35,7 +35,7 @@ export class Home {
   render() {
     return (
       <Host>
-        <stencil-route-title pageTitle="Home" />
+        <stencil-route-title pageTitle="Hi there! I'm Sean" />
 
         <div class="container">
           <div class="row">

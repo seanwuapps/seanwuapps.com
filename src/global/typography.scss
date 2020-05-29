@@ -1,5 +1,5 @@
 // @import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Ubuntu:wght@300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Heebo:wght@300&display=swap");
 :root,
 html {
   font-size: var(--base-font-size, 16px);
@@ -13,6 +13,8 @@ h1,
 h2,
 h3 {
   font-family: $title-font;
+  margin: 0;
+  line-height: 1.2;
 }
 
 * {
@@ -20,7 +22,7 @@ h3 {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 60px;
 }
 
 a {
@@ -33,7 +35,7 @@ a {
     font-size: calc(16px + 0.6357vw);
   }
   h1 {
-    font-size: 120px;
+    font-size: 80px;
   }
   * {
     word-wrap: normal;

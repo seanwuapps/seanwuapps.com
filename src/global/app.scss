@@ -9,7 +9,7 @@
 }
 html,
 body {
-  background: var(--sc-bg-color);
+  background: linear-gradient(var(--color-darkblue), var(--color-blue));
   color: var(--sc-text-color);
   overflow-x: hidden;
 }

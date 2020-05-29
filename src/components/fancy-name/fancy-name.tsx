@@ -3,7 +3,6 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
   tag: "fancy-name",
   styleUrl: "fancy-name.scss",
-  shadow: true,
 })
 export class FancyName {
   @Prop() url?: string = "";

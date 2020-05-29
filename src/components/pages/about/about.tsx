@@ -8,17 +8,15 @@ export class About {
   render() {
     return (
       <Host>
-        <div class="container text-center">
+        <stencil-route-title pageTitle="About me | Sean Wu" />
+        <fade-in withScroll up revert>
           <div class="row">
-            <div class="col-12 col-md-6 offset-md-3">
-              <sc-card bordered>
-                <h2>Hi</h2>
-                <p>I'm a lazy web developer living in Canberra, Australia.</p>
-                <p>I love using technology to simplify life</p>
-              </sc-card>
+            <div class="col-10 offset-1 col-md-8 offset-md-3 col-lg-7 offset-lg-4">
+              <h1>Allow me to introduce myself</h1>
             </div>
           </div>
-        </div>
+        </fade-in>
+        <div class="container"></div>
       </Host>
     );
   }
