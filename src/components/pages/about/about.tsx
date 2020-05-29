@@ -16,7 +16,33 @@ export class About {
             </div>
           </div>
         </fade-in>
-        <div class="container"></div>
+        <div class="container">
+          <fade-in withScroll up revert delay="0.2s">
+            <div class="row">
+              <div class="col-12 col-md-8">
+                <h2>Life is complex.</h2>
+                <p>
+                  My job is to simplify it for people in a place called the Web.
+                </p>
+                <p>
+                  I'm always fascinated by technology and smart ways people
+                  apply technology to make life easier.
+                </p>
+                <p>
+                  I love making cool shit that's useful and I{" "}
+                  <a
+                    href="http://playground.cordelta.digital/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    encourage others around me to do the same
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
+          </fade-in>
+        </div>
       </Host>
     );
   }
