@@ -15,4 +15,14 @@
     width: 100%;
     height: $spacer * $i;
   }
+  .spacing-#{$i} {
+    margin-top: $spacer * $i;
+  }
+  .neg-spacing-#{$i} {
+    margin-top: -$spacer * $i;
+  }
+}
+
+.full-width {
+  width: 100%;
 }

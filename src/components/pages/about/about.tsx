@@ -57,7 +57,14 @@ export class About {
               </fade-in>
             </div>
           </div>
-          <div class="spacer-6"></div>
+        </div>
+        <div class="spacer-3"></div>
+        <img
+          src="/assets/img/canberra.jpg"
+          alt="Canberra night"
+          class="full-width"
+        />
+        <div class="container neg-spacing-6">
           <div class="row">
             <div class="col-12 col-md-8 offset-md-3 col-lg-7 offset-lg-4">
               <fade-in withScroll up revert>
