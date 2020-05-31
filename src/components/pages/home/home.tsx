@@ -1,5 +1,5 @@
 import { Component, Host, h } from "@stencil/core";
-import cdLogo from "../../../assets/img/cd-logo.svg";
+
 @Component({
   tag: "page-home",
   styleUrl: "home.scss",
@@ -24,7 +24,7 @@ export class Home {
     },
     {
       side: "right",
-      html: `<p class="text-center"><a href="https://cordelta.digital" target="_blank" rel="noreferrer"><img class="cd-logo" src="${cdLogo}" alt="Cordelta Digital"></a></p>`,
+      html: `<p class="text-center"><a href="https://cordelta.digital" target="_blank" rel="noreferrer"><img class="cd-logo" src="/assets/img/cd-logo.svg" alt="Cordelta Digital"></a></p>`,
     },
     {
       side: "right",

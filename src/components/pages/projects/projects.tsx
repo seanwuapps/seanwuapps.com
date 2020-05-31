@@ -45,7 +45,7 @@ export class Projects {
             </p>
           </fade-in>
 
-          {this.projects.map((item, i) => (
+          {this.projects.map((item) => (
             <fade-in up withScroll>
               <div class="row">
                 <div class="col-10 offset-1">

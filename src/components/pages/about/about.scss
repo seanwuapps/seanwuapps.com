@@ -1,6 +1,8 @@
 page-about {
   display: block;
   img {
+    max-height: 60vh;
+    object-fit: cover;
     opacity: 0.6;
     filter: blur(1px);
   }
