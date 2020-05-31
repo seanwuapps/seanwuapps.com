@@ -8,7 +8,8 @@ export class AppRoot {
   render() {
     return (
       <div class="app-root">
-        <img src="/assets/img/logo.png" alt="Sean Wu" class="profile-pic" />
+        {/* <img src="/assets/img/logo.png" alt="Sean Wu" class="profile-pic" /> */}
+
         <header>
           <div class="container">
             <div class="row align-items-center">

@@ -35,14 +35,14 @@ page-home {
       p {
         margin: 5px 0;
       }
-      a {
-        text-decoration: none;
-        border-bottom: 1px solid var(--color-light);
+      p {
+        letter-spacing: 0;
       }
     }
   }
 
   .cd-logo {
-    width: 80%;
+    width: 120px;
+    max-width: 80%;
   }
 }

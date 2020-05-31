@@ -8,7 +8,7 @@ export class Home {
   private convo: { side: "left" | "right"; html: string }[] = [
     {
       side: "right",
-      html: `<h4>🚪Knock knock!</h4>`,
+      html: `<p>🚪<strong>KNOCK KNOCK!</strong></p>`,
     },
     {
       side: "left",
@@ -44,7 +44,7 @@ export class Home {
                 <fade-in
                   left={item.side === "left"}
                   right={item.side === "right"}
-                  delay={(i + 1) * 0.8 + "s"}
+                  delay={i * 1 + "s"}
                 >
                   <div class="row">
                     <sc-card

@@ -10,10 +10,10 @@
     &.up {
       transform: translate(0, $spacer * 2);
     }
-    &.left {
+    &.right {
       transform: translate(-$spacer * 2, 0);
     }
-    &.right {
+    &.left {
       transform: translate($spacer * 2, 0);
     }
     &.down {

@@ -1,6 +1,6 @@
 fancy-name {
   display: inline-block;
-  --fancy-name-height: 60px;
+  --fancy-name-size: 24px;
   --fancy-name-color: var(--app-text-color, #ccc);
   a {
     display: flex;
@@ -14,12 +14,12 @@ fancy-name {
     &.link-active {
       .first {
         .inner {
-          transform: skew(30deg) translateX(0px);
+          transform: skew(20deg) translateX(0px);
         }
       }
       .last {
         .inner {
-          transform: skew(30deg) translateX(0px);
+          transform: skew(20deg) translateX(0px);
         }
       }
     }
@@ -27,31 +27,31 @@ fancy-name {
   .first {
     font-family: $title-font;
     padding: 5px;
-    font-size: 34px;
+    font-size: var(--fancy-name-size);
     overflow: hidden;
-    transform: skew(-30deg);
+    transform: skew(-20deg);
     .inner {
-      transform: skew(30deg) translateX(14px);
+      transform: skew(20deg) translateX(14px);
     }
   }
   .divider {
     width: 0px;
-    height: 74px;
+    height: calc(var(--fancy-name-size) * 2.5);
     border-left: 2px solid c("light");
-    transform: skew(-30deg);
+    transform: skew(-20deg);
   }
   .last {
     padding: 0px 20px 0 0;
     overflow: hidden;
-    transform: skew(-30deg);
+    transform: skew(-20deg);
     .inner {
-      transform: skew(30deg) translateX(-14px);
+      transform: skew(20deg) translateX(-14px);
     }
     svg {
       justify-self: flex-end;
       display: block;
       width: auto;
-      height: calc(var(--fancy-name-height) / 1.25);
+      height: calc(var(--fancy-name-size) * 1.5);
       transform: translate(-6px, 16px);
       fill: var(--fancy-name-color);
     }
