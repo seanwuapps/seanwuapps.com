@@ -8,7 +8,11 @@
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "git": "git add . && git commit -m",
+    "postgit": "git push --all",
+    "deploy": "firebase deploy",
+    "postdeploy": "npm run git -- 'deploy'"
   },
   "devDependencies": {
     "@stencil/core": "^1.12.2",

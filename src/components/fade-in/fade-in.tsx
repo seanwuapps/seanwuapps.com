@@ -66,9 +66,11 @@ export class FadeIn {
   }
   render() {
     const { up, left, right, animated, delay } = this;
-    const styles = {
-      transitionDelay: delay ? delay : null,
-    };
+    const styles = delay
+      ? {
+          transitionDelay: delay,
+        }
+      : null;
     return (
       <Host class={{ inner: true, up, left, right, animated }} style={styles}>
         <slot></slot>

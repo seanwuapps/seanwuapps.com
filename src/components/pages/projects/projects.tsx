@@ -1,16 +1,17 @@
 import { Component, Host, h } from "@stencil/core";
 
+interface Project {
+  title: string;
+  subtitle: string;
+  description: string;
+  url?: string;
+}
 @Component({
   tag: "page-projects",
   styleUrl: "projects.scss",
 })
 export class Projects {
-  private projects: {
-    title: string;
-    subtitle: string;
-    description: string;
-    url?: string;
-  }[] = [
+  private projects: Project[] = [
     {
       title: "WePet",
       subtitle: "Social network for dogs.",
@@ -32,7 +33,24 @@ export class Projects {
       `,
       url: "https://nfc-time-tracker.web.app/",
     },
+    {
+      title: "Soft Components",
+      subtitle: "Neumorphism web components",
+      description: `
+      <p>A set of common components based on neumorphic design.</p>
+      `,
+      url: "https://soft-components-docs.web.app/",
+    },
   ];
+
+  projectCardContent(item: Project) {
+    return (
+      <div>
+        <h2>{item.title}</h2>
+      </div>
+    );
+  }
+
   render() {
     return (
       <Host>
@@ -47,33 +65,56 @@ export class Projects {
         </fade-in>
         <div class="container">
           <fade-in withScroll up revert>
-            <h2>Learning new technology by doing it.</h2>
+            <h2>I believe in learning a technology by doing it.</h2>
             <p>
-              It's a known fact that developers don't finish their side
-              projects, so don't judge.
+              I like the feeling of making things work, so instead of thinking
+              about what should I learn first, I encourage people to think bout
+              what they want to build first.
+            </p>
+            <p>
+              Once you have a goal, the tech (the language of choice, the
+              framework, the ecosystem, etc etc) is just the tool to help you
+              reach that goal.
+            </p>
+
+            <p>
+              In the process of making a thing, always keep an eye out for the
+              latest tech out there that might solve the problem you're having
+              now. If there's a tool, learn to use it.
+            </p>
+
+            <p>That's the most effective way of learning in my opinion.</p>
+            <p>
+              <em>
+                It's a known fact that developers don't finish their side
+                projects, so don't judge.
+              </em>
             </p>
           </fade-in>
-
-          {this.projects.map((item) => (
-            <fade-in up withScroll class="project">
-              <div class="card">
-                <sc-card>
-                  <h2>{item.title}</h2>
-                  <h3>{item.subtitle}</h3>
-                </sc-card>
-              </div>
-              <div class="text">
-                <div class="description" innerHTML={item.description}></div>
-
-                {item.url && (
-                  <div class="link">
-                    <sc-button href={item.url} target="_blank" rel="noreferrer">
-                      See it in action
-                    </sc-button>
-                  </div>
+          <div class="spacer-8"></div>
+          {this.projects.map((item, i) => (
+            <div class="project">
+              <fade-in offsetPx={240} revert withScroll class="card">
+                {item.url ? (
+                  <sc-button href={item.url} target="_blank" rel="noreferrer">
+                    {this.projectCardContent(item)}
+                  </sc-button>
+                ) : (
+                  <sc-card>{this.projectCardContent(item)}</sc-card>
                 )}
-              </div>
-            </fade-in>
+              </fade-in>
+              <fade-in
+                offsetPx={240}
+                revert
+                withScroll
+                left={i % 2 === 0}
+                right={i % 2 !== 0}
+                class="text"
+              >
+                <h3>{item.subtitle}</h3>
+                <div class="description" innerHTML={item.description}></div>
+              </fade-in>
+            </div>
           ))}
         </div>
       </Host>

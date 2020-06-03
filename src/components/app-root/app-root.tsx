@@ -43,8 +43,9 @@ export class AppRoot {
                 component="page-home"
                 exact
               ></stencil-route>
-              <stencil-route url="/about" component="page-about" exact />
-              <stencil-route url="/projects" component="page-projects" exact />
+              <stencil-route url="/about" component="page-about" />
+              <stencil-route url="/projects" component="page-projects" />
+              <stencil-route component="page-notfound" />
             </stencil-route-switch>
           </stencil-router>
         </main>

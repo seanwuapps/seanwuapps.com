@@ -2,15 +2,42 @@ page-projects {
   display: block;
   .project {
     display: flex;
-    align-items: stretch;
-    sc-card {
-      h3 {
-        color: lighten(c("grey"), 20%);
+    align-items: flex-end;
+    margin-bottom: $spacer * 6;
+    justify-content: space-between;
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      .card {
+        margin-right: 0;
+      }
+      .text {
+        margin-right: $spacer * 2;
       }
     }
-
-    .link {
-      text-align: right;
+    .card {
+      flex-basis: 50%;
+      margin-right: $spacer * 2;
+      sc-card,
+      sc-button {
+        --sc-button-width: 100%;
+        width: 100%;
+        text-align: center;
+        h2 {
+          margin: 0;
+        }
+      }
+    }
+    .text {
+      flex-basis: 50%;
+      h3 {
+        color: c("light");
+        font-size: 24px;
+        margin-bottom: $spacer;
+      }
+      p {
+        font-size: 14px;
+        margin-bottom: $spacer / 2;
+      }
     }
   }
 }

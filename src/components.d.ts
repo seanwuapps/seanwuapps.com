@@ -26,6 +26,8 @@ export namespace Components {
     }
     interface PageHome {
     }
+    interface PageNotfound {
+    }
     interface PageProjects {
     }
 }
@@ -60,6 +62,12 @@ declare global {
         prototype: HTMLPageHomeElement;
         new (): HTMLPageHomeElement;
     };
+    interface HTMLPageNotfoundElement extends Components.PageNotfound, HTMLStencilElement {
+    }
+    var HTMLPageNotfoundElement: {
+        prototype: HTMLPageNotfoundElement;
+        new (): HTMLPageNotfoundElement;
+    };
     interface HTMLPageProjectsElement extends Components.PageProjects, HTMLStencilElement {
     }
     var HTMLPageProjectsElement: {
@@ -72,6 +80,7 @@ declare global {
         "fancy-name": HTMLFancyNameElement;
         "page-about": HTMLPageAboutElement;
         "page-home": HTMLPageHomeElement;
+        "page-notfound": HTMLPageNotfoundElement;
         "page-projects": HTMLPageProjectsElement;
     }
 }
@@ -96,6 +105,8 @@ declare namespace LocalJSX {
     }
     interface PageHome {
     }
+    interface PageNotfound {
+    }
     interface PageProjects {
     }
     interface IntrinsicElements {
@@ -104,6 +115,7 @@ declare namespace LocalJSX {
         "fancy-name": FancyName;
         "page-about": PageAbout;
         "page-home": PageHome;
+        "page-notfound": PageNotfound;
         "page-projects": PageProjects;
     }
 }
@@ -116,6 +128,7 @@ declare module "@stencil/core" {
             "fancy-name": LocalJSX.FancyName & JSXBase.HTMLAttributes<HTMLFancyNameElement>;
             "page-about": LocalJSX.PageAbout & JSXBase.HTMLAttributes<HTMLPageAboutElement>;
             "page-home": LocalJSX.PageHome & JSXBase.HTMLAttributes<HTMLPageHomeElement>;
+            "page-notfound": LocalJSX.PageNotfound & JSXBase.HTMLAttributes<HTMLPageNotfoundElement>;
             "page-projects": LocalJSX.PageProjects & JSXBase.HTMLAttributes<HTMLPageProjectsElement>;
         }
     }
