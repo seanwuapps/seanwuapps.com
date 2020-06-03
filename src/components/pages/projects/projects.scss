@@ -3,10 +3,29 @@ page-projects {
   .project {
     display: flex;
     align-items: flex-end;
-    margin-bottom: $spacer * 6;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    padding-left: $spacer * 2;
+    padding-right: $spacer * 2;
     justify-content: space-between;
+    position: relative;
+    .bg {
+      text-align: left;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: $title-font;
+      font-size: 120px;
+      opacity: 0.2;
+      width: 50%;
+      color: black;
+    }
     &:nth-child(even) {
       flex-direction: row-reverse;
+      .bg {
+        text-align: right;
+      }
       .card {
         margin-right: 0;
       }
@@ -22,8 +41,11 @@ page-projects {
         --sc-button-width: 100%;
         width: 100%;
         text-align: center;
+        backdrop-filter: blur(4px);
         h2 {
           margin: 0;
+          color: var(--sc-button-bg-color);
+          -webkit-text-stroke: 1px var(--sc-button-text-color);
         }
       }
     }

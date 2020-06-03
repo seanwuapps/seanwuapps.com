@@ -63,6 +63,7 @@ export class Projects {
             </div>
           </div>
         </fade-in>
+        <div class="spacer-6"></div>
         <div class="container">
           <fade-in withScroll up revert>
             <h2>I believe in learning a technology by doing it.</h2>
@@ -94,6 +95,9 @@ export class Projects {
           <div class="spacer-8"></div>
           {this.projects.map((item, i) => (
             <div class="project">
+              <fade-in offsetPx={240} revert withScroll class="bg">
+                {item.title}
+              </fade-in>
               <fade-in offsetPx={240} revert withScroll class="card">
                 {item.url ? (
                   <sc-button href={item.url} target="_blank" rel="noreferrer">

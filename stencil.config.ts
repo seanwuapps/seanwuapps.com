@@ -28,7 +28,7 @@ export const config: Config = {
         autoprefixer(),
         pxtorem({
           propList: ["*"],
-          selectorBlackList: [":root", "html", ".container"],
+          selectorBlackList: [":root", "html", ".container", "h2"],
           replace: false,
         }),
       ],
