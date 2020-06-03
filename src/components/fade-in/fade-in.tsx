@@ -70,10 +70,8 @@ export class FadeIn {
       transitionDelay: delay ? delay : null,
     };
     return (
-      <Host>
-        <div class={{ inner: true, up, left, right, animated }} style={styles}>
-          <slot></slot>
-        </div>
+      <Host class={{ inner: true, up, left, right, animated }} style={styles}>
+        <slot></slot>
       </Host>
     );
   }

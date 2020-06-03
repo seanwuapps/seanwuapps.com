@@ -1,0 +1,16 @@
+page-projects {
+  display: block;
+  .project {
+    display: flex;
+    align-items: stretch;
+    sc-card {
+      h3 {
+        color: lighten(c("grey"), 20%);
+      }
+    }
+
+    .link {
+      text-align: right;
+    }
+  }
+}

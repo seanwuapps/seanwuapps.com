@@ -2,7 +2,7 @@ import { Component, Host, h } from "@stencil/core";
 
 @Component({
   tag: "page-projects",
-  styleUrl: "projects.css",
+  styleUrl: "projects.scss",
 })
 export class Projects {
   private projects: {
@@ -22,6 +22,15 @@ export class Projects {
         <li>Inspired by Instagram</li>
         </ul>`,
       url: "https://wepet.net",
+    },
+    {
+      title: "NFC Time Tracker",
+      subtitle: "Don't waste your time on time management",
+      description: `
+      <p>Combined NFC technology with web technology.</p>
+      <p>Out comes a fun way to manage your time more easily and efficiently.</p>
+      `,
+      url: "https://nfc-time-tracker.web.app/",
     },
   ];
   render() {
@@ -46,23 +55,23 @@ export class Projects {
           </fade-in>
 
           {this.projects.map((item) => (
-            <fade-in up withScroll>
-              <div class="row">
-                <div class="col-10 offset-1">
-                  <div class="spacer-4"></div>
-                  <sc-card>
-                    <h2>{item.title}</h2>
-                    <h3>{item.subtitle}</h3>
-                    <div class="description" innerHTML={item.description}></div>
+            <fade-in up withScroll class="project">
+              <div class="card">
+                <sc-card>
+                  <h2>{item.title}</h2>
+                  <h3>{item.subtitle}</h3>
+                </sc-card>
+              </div>
+              <div class="text">
+                <div class="description" innerHTML={item.description}></div>
 
-                    {item.url && <hr />}
-                    {item.url && (
-                      <a href={item.url} target="_blank" rel="noreferrer">
-                        See it in action
-                      </a>
-                    )}
-                  </sc-card>
-                </div>
+                {item.url && (
+                  <div class="link">
+                    <sc-button href={item.url} target="_blank" rel="noreferrer">
+                      See it in action
+                    </sc-button>
+                  </div>
+                )}
               </div>
             </fade-in>
           ))}
