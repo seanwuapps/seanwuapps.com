@@ -39,7 +39,7 @@ export class Home {
 
         <div class="container">
           <div class="row">
-            <div class="col-md-8 offset-md-2">
+            <div class="col-10 offset-1 col-md-8 offset-md-2">
               {this.convo.map((item, i) => (
                 <fade-in
                   left={item.side === "left"}

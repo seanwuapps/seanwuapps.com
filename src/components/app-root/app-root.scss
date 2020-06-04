@@ -33,15 +33,24 @@
         margin: 0 auto;
         a {
           display: block;
-          color: white;
+          color: var(--text-color);
           text-decoration: none;
-          font-family: $title-font;
-          padding: $spacer/2 $spacer;
-          font-size: 20px;
+          font-family: $body-font;
+          padding: $spacer $spacer * 2;
+          font-size: 16px;
+          text-transform: uppercase;
+          border-bottom: 1px solid transparent;
           @media (min-width: 576px) {
-            font-size: 24px;
+            font-size: 16px;
           }
           position: relative;
+          &.link-active {
+            border-color: c("light");
+            &::before,
+            &::after {
+              content: none;
+            }
+          }
           --menu-item-animation-duration: 0.3s;
           &::before,
           &::after {
@@ -50,7 +59,7 @@
             width: 0px;
             height: 0px;
             border: 1px solid transparent;
-            border-radius: 5px;
+            border-radius: 0px;
             animation-direction: reverse;
           }
           &::before {

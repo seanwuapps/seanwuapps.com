@@ -41,6 +41,20 @@ export class Projects {
       `,
       url: "https://soft-components-docs.web.app/",
     },
+    {
+      title: "Butler",
+      subtitle: "Internal CLI helper to automate WP tasks",
+      description: `
+      <p>Built on top of WP Cli and utilising Lando, butler provides a list of helpful commands in the terminal to manage the WordPress site generation and administration tasks for my workplace.</p>
+      `,
+      url: "https://github.com/Cordeltadigital/butler",
+    },
+    {
+      title: "Wu Components",
+      subtitle: "Framework-agnostic web components inspired by Material Design",
+      description: `<p>Built with StencilJS, Wu components provide a number of easy to use custom elements based on Material Design components.</p>`,
+      url: "https://wu-components-docs.web.app/",
+    },
   ];
 
   projectCardContent(item: Project) {

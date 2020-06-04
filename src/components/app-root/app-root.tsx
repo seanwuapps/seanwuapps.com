@@ -12,7 +12,7 @@ export class AppRoot {
 
         <header>
           <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-end">
               <div class="col">
                 <fancy-name url="/"></fancy-name>
               </div>
