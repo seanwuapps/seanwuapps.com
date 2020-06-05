@@ -2,11 +2,15 @@ fancy-name {
   display: inline-block;
   --fancy-name-size: 24px;
   --fancy-name-color: var(--app-text-color, #ccc);
+  // clip-path: url(#svgPath);
   a {
     display: flex;
     color: var(--fancy-name-color);
     text-decoration: none;
     position: relative;
+    border-radius: 73% 37% 40% 60% / 43% 67% 52% 56%;
+    padding: 10px 15px 10px 8px;
+    overflow: hidden;
     .inner {
       display: block;
       width: auto;
@@ -29,9 +33,7 @@ fancy-name {
   }
   .first {
     font-family: $title-font;
-    padding: 5px;
-    padding-right: 0;
-    padding-left: 10px;
+    padding: $spacer/2 0 $spacer/2 $spacer;
     font-size: var(--fancy-name-size);
     overflow: hidden;
     text-align: right;
@@ -42,13 +44,14 @@ fancy-name {
   .divider {
     position: absolute;
     top: 0;
-    left: calc(55% + 3px);
-    width: 1px;
+    left: 56%;
+    width: 2px;
     height: 100%;
-    background: c("light");
+    background: #f3d3e7;
     transition: width 0.3s ease, left 0.3s ease;
   }
   .last {
+    padding: $spacer/2 $spacer $spacer/2 0;
     padding: 5px;
     padding-left: 0;
     padding-right: 10px;
