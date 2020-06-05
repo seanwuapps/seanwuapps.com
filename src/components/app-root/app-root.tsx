@@ -12,11 +12,11 @@ export class AppRoot {
 
         <header>
           <div class="container">
-            <div class="row align-items-end">
-              <div class="col">
+            <div class="row align-items-center">
+              <div class="col-12 col-sm logo">
                 <fancy-name url="/"></fancy-name>
               </div>
-              <div class="col">
+              <div class="col-12 col-sm">
                 <nav>
                   <ul>
                     <li>

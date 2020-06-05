@@ -11,10 +11,10 @@ export class FancyName {
     return (
       <Host>
         <stencil-route-link url={this.url} exact>
+          <div class="divider"></div>
           <div class="first">
             <span class="inner">Sean</span>
           </div>
-          <div class="divider"></div>
           <div class="last">
             <div class="inner">
               <svg
