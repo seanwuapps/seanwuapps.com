@@ -8,7 +8,7 @@ fancy-name {
     color: var(--fancy-name-color);
     text-decoration: none;
     position: relative;
-    border-radius: 73% 37% 40% 60% / 43% 67% 52% 56%;
+    border-radius: 73% 37% 40% 60% / 70% 67% 52% 43%;
     padding: 10px 15px 10px 8px;
     overflow: hidden;
     .inner {
@@ -25,9 +25,11 @@ fancy-name {
         transition: transform 0.3s ease;
       }
       .divider {
+        height: 100%;
         left: 0;
         width: 100%;
-        transition: left 0.3s ease 0.3s, width 0.3s ease 0.3s;
+        transition: height 0.2s ease 0.2s, left 0.3s ease 0.5s,
+          width 0.3s ease 0.5s;
       }
     }
   }
@@ -43,12 +45,13 @@ fancy-name {
   }
   .divider {
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 56%;
     width: 2px;
-    height: 100%;
+    height: 50px;
     background: #f3d3e7;
-    transition: width 0.3s ease, left 0.3s ease;
+    transform: translateY(-50%);
+    transition: width 0.3s ease, left 0.3s ease, height 0.3s ease 0.3s;
   }
   .last {
     padding: $spacer/2 $spacer $spacer/2 0;

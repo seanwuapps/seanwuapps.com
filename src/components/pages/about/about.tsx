@@ -9,15 +9,9 @@ export class About {
     return (
       <Host>
         <stencil-route-title pageTitle="About me | Sean Wu" />
-        <div class="spacer-4"></div>
-        <fade-in offsetPx={200} left withScroll revert>
-          <div class="row">
-            <div class="col-10 offset-1 col-md-8 offset-md-3 col-lg-7 offset-lg-4">
-              <h1>Allow me to introduce myself</h1>
-            </div>
-          </div>
-        </fade-in>
-        <div class="spacer-6"></div>
+        <page-title>
+          <h1>Allow me to introduce myself</h1>
+        </page-title>
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-8 offset-md-1">

@@ -8,6 +8,11 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AppRoot {
     }
+    interface BlogList {
+    }
+    interface BlogSingle {
+        "match": any;
+    }
     interface FadeIn {
         "delay"?: string;
         "down"?: boolean;
@@ -26,9 +31,13 @@ export namespace Components {
     }
     interface PageHome {
     }
+    interface PageLoading {
+    }
     interface PageNotfound {
     }
     interface PageProjects {
+    }
+    interface PageTitle {
     }
 }
 declare global {
@@ -37,6 +46,18 @@ declare global {
     var HTMLAppRootElement: {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
+    };
+    interface HTMLBlogListElement extends Components.BlogList, HTMLStencilElement {
+    }
+    var HTMLBlogListElement: {
+        prototype: HTMLBlogListElement;
+        new (): HTMLBlogListElement;
+    };
+    interface HTMLBlogSingleElement extends Components.BlogSingle, HTMLStencilElement {
+    }
+    var HTMLBlogSingleElement: {
+        prototype: HTMLBlogSingleElement;
+        new (): HTMLBlogSingleElement;
     };
     interface HTMLFadeInElement extends Components.FadeIn, HTMLStencilElement {
     }
@@ -62,6 +83,12 @@ declare global {
         prototype: HTMLPageHomeElement;
         new (): HTMLPageHomeElement;
     };
+    interface HTMLPageLoadingElement extends Components.PageLoading, HTMLStencilElement {
+    }
+    var HTMLPageLoadingElement: {
+        prototype: HTMLPageLoadingElement;
+        new (): HTMLPageLoadingElement;
+    };
     interface HTMLPageNotfoundElement extends Components.PageNotfound, HTMLStencilElement {
     }
     var HTMLPageNotfoundElement: {
@@ -74,18 +101,33 @@ declare global {
         prototype: HTMLPageProjectsElement;
         new (): HTMLPageProjectsElement;
     };
+    interface HTMLPageTitleElement extends Components.PageTitle, HTMLStencilElement {
+    }
+    var HTMLPageTitleElement: {
+        prototype: HTMLPageTitleElement;
+        new (): HTMLPageTitleElement;
+    };
     interface HTMLElementTagNameMap {
         "app-root": HTMLAppRootElement;
+        "blog-list": HTMLBlogListElement;
+        "blog-single": HTMLBlogSingleElement;
         "fade-in": HTMLFadeInElement;
         "fancy-name": HTMLFancyNameElement;
         "page-about": HTMLPageAboutElement;
         "page-home": HTMLPageHomeElement;
+        "page-loading": HTMLPageLoadingElement;
         "page-notfound": HTMLPageNotfoundElement;
         "page-projects": HTMLPageProjectsElement;
+        "page-title": HTMLPageTitleElement;
     }
 }
 declare namespace LocalJSX {
     interface AppRoot {
+    }
+    interface BlogList {
+    }
+    interface BlogSingle {
+        "match"?: any;
     }
     interface FadeIn {
         "delay"?: string;
@@ -105,18 +147,26 @@ declare namespace LocalJSX {
     }
     interface PageHome {
     }
+    interface PageLoading {
+    }
     interface PageNotfound {
     }
     interface PageProjects {
     }
+    interface PageTitle {
+    }
     interface IntrinsicElements {
         "app-root": AppRoot;
+        "blog-list": BlogList;
+        "blog-single": BlogSingle;
         "fade-in": FadeIn;
         "fancy-name": FancyName;
         "page-about": PageAbout;
         "page-home": PageHome;
+        "page-loading": PageLoading;
         "page-notfound": PageNotfound;
         "page-projects": PageProjects;
+        "page-title": PageTitle;
     }
 }
 export { LocalJSX as JSX };
@@ -124,12 +174,16 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "blog-list": LocalJSX.BlogList & JSXBase.HTMLAttributes<HTMLBlogListElement>;
+            "blog-single": LocalJSX.BlogSingle & JSXBase.HTMLAttributes<HTMLBlogSingleElement>;
             "fade-in": LocalJSX.FadeIn & JSXBase.HTMLAttributes<HTMLFadeInElement>;
             "fancy-name": LocalJSX.FancyName & JSXBase.HTMLAttributes<HTMLFancyNameElement>;
             "page-about": LocalJSX.PageAbout & JSXBase.HTMLAttributes<HTMLPageAboutElement>;
             "page-home": LocalJSX.PageHome & JSXBase.HTMLAttributes<HTMLPageHomeElement>;
+            "page-loading": LocalJSX.PageLoading & JSXBase.HTMLAttributes<HTMLPageLoadingElement>;
             "page-notfound": LocalJSX.PageNotfound & JSXBase.HTMLAttributes<HTMLPageNotfoundElement>;
             "page-projects": LocalJSX.PageProjects & JSXBase.HTMLAttributes<HTMLPageProjectsElement>;
+            "page-title": LocalJSX.PageTitle & JSXBase.HTMLAttributes<HTMLPageTitleElement>;
         }
     }
 }

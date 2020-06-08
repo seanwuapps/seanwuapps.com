@@ -69,15 +69,9 @@ export class Projects {
     return (
       <Host>
         <stencil-route-title pageTitle="My projects | Sean Wu" />
-        <div class="spacer-4"></div>
-        <fade-in left withScroll revert>
-          <div class="row">
-            <div class="col-10 offset-1 col-md-8 offset-md-3 col-lg-7 offset-lg-4">
-              <h1>Stuff I built</h1>
-            </div>
-          </div>
-        </fade-in>
-        <div class="spacer-6"></div>
+        <page-title>
+          <h1>Stuff I built</h1>
+        </page-title>
         <div class="container">
           <fade-in withScroll up revert>
             <h2>I believe in learning a technology by doing it.</h2>
@@ -109,10 +103,10 @@ export class Projects {
           <div class="spacer-8"></div>
           {this.projects.map((item, i) => (
             <div class="project">
-              <fade-in offsetPx={240} revert withScroll class="bg">
+              <fade-in offsetPx={100} revert withScroll class="bg">
                 {item.title}
               </fade-in>
-              <fade-in offsetPx={240} revert withScroll class="card">
+              <fade-in offsetPx={100} revert withScroll class="card">
                 {item.url ? (
                   <sc-button href={item.url} target="_blank" rel="noreferrer">
                     {this.projectCardContent(item)}
@@ -122,7 +116,7 @@ export class Projects {
                 )}
               </fade-in>
               <fade-in
-                offsetPx={240}
+                offsetPx={100}
                 revert
                 withScroll
                 left={i % 2 === 0}

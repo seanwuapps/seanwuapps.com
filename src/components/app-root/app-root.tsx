@@ -11,12 +11,12 @@ export class AppRoot {
         {/* <img src="/assets/img/logo.png" alt="Sean Wu" class="profile-pic" /> */}
 
         <header>
-          <div class="container">
+          <div class="container-fluid">
             <div class="row align-items-center">
-              <div class="col-12 col-sm logo">
+              <div class="col-12 col-md-4 logo">
                 <fancy-name url="/"></fancy-name>
               </div>
-              <div class="col-12 col-sm">
+              <div class="col-12 col-md-8">
                 <nav>
                   <ul>
                     <li>
@@ -27,6 +27,11 @@ export class AppRoot {
                     <li>
                       <stencil-route-link url="/projects">
                         Projects
+                      </stencil-route-link>
+                    </li>
+                    <li>
+                      <stencil-route-link url="/blog">
+                        Thoughts
                       </stencil-route-link>
                     </li>
                   </ul>
@@ -45,6 +50,10 @@ export class AppRoot {
               ></stencil-route>
               <stencil-route url="/about" component="page-about" />
               <stencil-route url="/projects" component="page-projects" />
+              <stencil-route url="/blog" component="blog-list" exact />
+              {/* <stencil-route url="/blog/" component="blog-list" exact /> */}
+              <stencil-route url="/blog/:slug" component="blog-single" />
+
               <stencil-route component="page-notfound" />
             </stencil-route-switch>
           </stencil-router>
