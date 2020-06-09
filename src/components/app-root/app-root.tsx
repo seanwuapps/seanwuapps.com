@@ -51,7 +51,7 @@ export class AppRoot {
               <stencil-route url="/about" component="page-about" />
               <stencil-route url="/projects" component="page-projects" />
               <stencil-route url="/blog" component="blog-list" exact />
-              {/* <stencil-route url="/blog/" component="blog-list" exact /> */}
+              <stencil-route url="/blog/" component="blog-list" exact />
               <stencil-route url="/blog/:slug" component="blog-single" />
 
               <stencil-route component="page-notfound" />
