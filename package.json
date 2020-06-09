@@ -11,7 +11,7 @@
     "generate": "stencil generate",
     "git": "git add . && git commit -m",
     "postgit": "git push --all",
-    "predeploy": "stencil generate --prerender",
+    "predeploy": "stencil build --prerender",
     "deploy": "firebase deploy",
     "postdeploy": "npm run git -- 'deploy'"
   },
