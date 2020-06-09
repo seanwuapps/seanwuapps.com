@@ -24,6 +24,40 @@ export class List {
       };
     });
   }
+  chunkPosts(posts, chunkSize = 6) {
+    var R = [];
+    for (var i = 0; i < posts.length; i += chunkSize) {
+      R.push(posts.slice(i, i + chunkSize));
+    }
+    return R;
+  }
+  blogList(posts) {
+    return this.chunkPosts(posts).map((postGrid) => {
+      return (
+        <div class="blog-list-grid">
+          {postGrid.map((post) => {
+            const cardStyle = post?.heroImage?.fields?.file?.url
+              ? {
+                  backgroundImage: `url(${post?.heroImage?.fields?.file?.url})`,
+                }
+              : null;
+            return (
+              <sc-button
+                class="blog-list-item"
+                style={cardStyle}
+                href={`/blog/${post.fields.slug}`}
+              >
+                <h2>{post.fields.title}</h2>
+
+                <p class="blurb">{post.fields.description}</p>
+              </sc-button>
+            );
+          })}
+        </div>
+      );
+    });
+  }
+
   render() {
     return (
       <Host>
@@ -32,27 +66,11 @@ export class List {
           <h1>My thoughts</h1>
         </page-title>
         <div class="container">
-          <div class="blog-list-grid">
-            {this.posts.length > 0 ? (
-              this.posts.map((post) => (
-                <div class="blog-list-item">
-                  <sc-card>
-                    <h2>{post.fields.title}</h2>
-
-                    <p>{post.fields.description}</p>
-                    {post?.heroImage?.fields?.file?.url ? (
-                      <img
-                        class="blog-list-item__hero"
-                        src={post?.heroImage?.fields?.file?.url}
-                      />
-                    ) : null}
-                  </sc-card>
-                </div>
-              ))
-            ) : (
-              <page-loading></page-loading>
-            )}
-          </div>
+          {this.posts.length > 0 ? (
+            this.blogList(this.posts)
+          ) : (
+            <page-loading></page-loading>
+          )}
           <div class="spacer-4"></div>
         </div>
         <div class="spacer-6"></div>
