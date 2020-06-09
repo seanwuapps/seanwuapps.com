@@ -73,8 +73,10 @@ export class Projects {
           <h1>Stuff I built</h1>
         </page-title>
         <div class="container">
-          <fade-in withScroll up revert>
+          <fade-in withScroll right revert>
             <h2>I believe in learning a technology by doing it.</h2>
+          </fade-in>
+          <fade-in withScroll up revert>
             <p>
               I like the feeling of making things work, so instead of thinking
               about what should I learn first, I encourage people to think bout

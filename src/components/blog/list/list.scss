@@ -32,12 +32,15 @@ blog-list {
         --sc-button-text-hover-color: var(--color-light);
       }
     }
+    a,
+    button {
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
     .button-inner,
     a,
     button {
       height: 100%;
       text-align: left;
-
       .blurb {
         font-size: 12px;
       }

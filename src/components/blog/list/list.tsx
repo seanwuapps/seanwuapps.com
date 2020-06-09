@@ -13,7 +13,10 @@ export class List {
       order: "sys.updatedAt",
     });
     this.posts = response.items.map((item) => {
-      const imgId = item.fields.heroImage.sys.id;
+      const imgId = item.fields?.heroImage?.sys?.id;
+      if (!imgId) {
+        return item;
+      }
       const heroImage = response.includes.Asset.find(
         (asset) => asset.sys.id === imgId
       );
@@ -71,9 +74,8 @@ export class List {
           ) : (
             <page-loading></page-loading>
           )}
-          <div class="spacer-4"></div>
         </div>
-        <div class="spacer-6"></div>
+        <div class="spacer-4"></div>
       </Host>
     );
   }

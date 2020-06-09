@@ -37,6 +37,9 @@ export class Single {
     }
     return (
       <Host>
+        <stencil-route-title
+          pageTitle={`${this.post.fields.title} | Sean Wu`}
+        />
         <div class="container">
           <page-title>
             <h1>{this.post.fields.title}</h1>
