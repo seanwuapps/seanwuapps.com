@@ -30,6 +30,14 @@ p {
   line-height: 1.5;
   margin-bottom: $spacer;
   letter-spacing: 1px;
+}
+
+main {
+  ul {
+    li {
+      margin-bottom: $spacer;
+    }
+  }
   a {
     text-decoration: none;
     position: relative;
@@ -38,6 +46,11 @@ p {
     &:hover,
     &:focus {
       border-bottom-color: rgba(c("light"), 20%);
+    }
+  }
+  sc-button {
+    a {
+      border-bottom: none;
     }
   }
 }

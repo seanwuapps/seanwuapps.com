@@ -35,6 +35,10 @@ export class Home {
   render() {
     return (
       <Host>
+        <seo-tags
+          pageTitle="Hi there! I'm Sean"
+          description="Sean Wu, the web dev with coffee addiction"
+        ></seo-tags>
         <stencil-route-title pageTitle="Hi there! I'm Sean" />
 
         <div class="container">

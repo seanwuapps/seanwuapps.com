@@ -8,7 +8,10 @@ export class About {
   render() {
     return (
       <Host>
-        <stencil-route-title pageTitle="About me | Sean Wu" />
+        <seo-tags
+          pageTitle="About me | Sean Wu"
+          description="Sean Wu, the web dev with coffee addiction"
+        ></seo-tags>
         <page-title>
           <h1>Allow me to introduce myself</h1>
         </page-title>

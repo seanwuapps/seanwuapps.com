@@ -45,15 +45,13 @@ export class List {
                 }
               : null;
             return (
-              <sc-button
-                class="blog-list-item"
-                style={cardStyle}
-                href={`/blog/${post.fields.slug}`}
-              >
-                <h2>{post.fields.title}</h2>
+              <fade-in withScroll class="blog-list-item">
+                <sc-button style={cardStyle} href={`/blog/${post.fields.slug}`}>
+                  <h2>{post.fields.title}</h2>
 
-                <p class="blurb">{post.fields.description}</p>
-              </sc-button>
+                  <p class="blurb">{post.fields.description}</p>
+                </sc-button>
+              </fade-in>
             );
           })}
         </div>
@@ -64,7 +62,10 @@ export class List {
   render() {
     return (
       <Host>
-        <stencil-route-title pageTitle="Thoughts | Sean Wu" />
+        <seo-tags
+          pageTitle="Thoughts | Sean Wu"
+          description="My thoughts in the form of a blog"
+        ></seo-tags>
         <page-title>
           <h1>My thoughts</h1>
         </page-title>

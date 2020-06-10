@@ -1,13 +1,19 @@
-import { Component, Host, h } from "@stencil/core";
+import { Component, Host, h, Prop } from "@stencil/core";
 
 @Component({
   tag: "page-title",
   styleUrl: "page-title.scss",
 })
 export class Title {
+  @Prop() heroImage?: string;
   render() {
+    const { heroImage } = this;
     return (
       <Host>
+        {heroImage && (
+          <img class="page-title-bg" src={heroImage} alt="Hero image" />
+        )}
+
         <div class="spacer-4"></div>
         <fade-in left withScroll revert>
           <div class="row">

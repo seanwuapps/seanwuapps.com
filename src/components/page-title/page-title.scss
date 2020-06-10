@@ -1,3 +1,17 @@
 page-title {
   display: block;
+  position: relative;
+  .page-title-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: calc(100% - #{$spacer * 4});
+    object-fit: cover;
+    filter: blur(5px);
+    opacity: 0.4;
+    pointer-events: none;
+  }
 }

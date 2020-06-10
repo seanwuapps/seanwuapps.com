@@ -38,6 +38,12 @@ export namespace Components {
     interface PageProjects {
     }
     interface PageTitle {
+        "heroImage"?: string;
+    }
+    interface SeoTags {
+        "description": string;
+        "image": string;
+        "pageTitle": string;
     }
 }
 declare global {
@@ -107,6 +113,12 @@ declare global {
         prototype: HTMLPageTitleElement;
         new (): HTMLPageTitleElement;
     };
+    interface HTMLSeoTagsElement extends Components.SeoTags, HTMLStencilElement {
+    }
+    var HTMLSeoTagsElement: {
+        prototype: HTMLSeoTagsElement;
+        new (): HTMLSeoTagsElement;
+    };
     interface HTMLElementTagNameMap {
         "app-root": HTMLAppRootElement;
         "blog-list": HTMLBlogListElement;
@@ -119,6 +131,7 @@ declare global {
         "page-notfound": HTMLPageNotfoundElement;
         "page-projects": HTMLPageProjectsElement;
         "page-title": HTMLPageTitleElement;
+        "seo-tags": HTMLSeoTagsElement;
     }
 }
 declare namespace LocalJSX {
@@ -154,6 +167,12 @@ declare namespace LocalJSX {
     interface PageProjects {
     }
     interface PageTitle {
+        "heroImage"?: string;
+    }
+    interface SeoTags {
+        "description"?: string;
+        "image"?: string;
+        "pageTitle"?: string;
     }
     interface IntrinsicElements {
         "app-root": AppRoot;
@@ -167,6 +186,7 @@ declare namespace LocalJSX {
         "page-notfound": PageNotfound;
         "page-projects": PageProjects;
         "page-title": PageTitle;
+        "seo-tags": SeoTags;
     }
 }
 export { LocalJSX as JSX };
@@ -184,6 +204,7 @@ declare module "@stencil/core" {
             "page-notfound": LocalJSX.PageNotfound & JSXBase.HTMLAttributes<HTMLPageNotfoundElement>;
             "page-projects": LocalJSX.PageProjects & JSXBase.HTMLAttributes<HTMLPageProjectsElement>;
             "page-title": LocalJSX.PageTitle & JSXBase.HTMLAttributes<HTMLPageTitleElement>;
+            "seo-tags": LocalJSX.SeoTags & JSXBase.HTMLAttributes<HTMLSeoTagsElement>;
         }
     }
 }

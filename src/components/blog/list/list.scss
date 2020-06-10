@@ -17,13 +17,16 @@ blog-list {
   }
 
   .blog-list-item {
-    border-radius: var(--sc-border-radius);
     --sc-button-padding-x: #{$spacer};
-    background-position: center;
-    background-size: cover;
     margin-bottom: $spacer * 2;
     @media (min-width: 768px) {
       margin-bottom: 0;
+    }
+    sc-button {
+      border-radius: var(--sc-border-radius);
+      background-position: center;
+      background-size: cover;
+      height: 100%;
     }
     &:hover {
       --sc-button-bg-color: #{rgba(c("darkblue"), 0.4)};

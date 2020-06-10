@@ -68,7 +68,12 @@ export class Projects {
   render() {
     return (
       <Host>
-        <stencil-route-title pageTitle="My projects | Sean Wu" />
+        <seo-tags
+          pageTitle="My projects | Sean Wu"
+          description="I like the feeling of making things work, so instead of thinking
+              about what should I learn first, I encourage people to think bout
+              what they want to build first."
+        ></seo-tags>
         <page-title>
           <h1>Stuff I built</h1>
         </page-title>
