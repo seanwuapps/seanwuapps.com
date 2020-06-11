@@ -21,6 +21,7 @@ export class SeoTags {
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />
+        <meta name="twitter:image:src" content={image} />
 
         <meta property="og:url" content={window.location.href} />
         <meta property="og:type" content="website" />
