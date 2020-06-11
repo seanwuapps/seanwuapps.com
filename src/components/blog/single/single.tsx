@@ -13,7 +13,7 @@ export class Single {
   @State() loading: boolean = true;
 
   async componentWillLoad() {
-    contentClient
+    await contentClient
       .getPostBySlug(this.match.params.slug)
       .then((response) => {
         if (!response.items.length) {
