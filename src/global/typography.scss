@@ -79,3 +79,10 @@ a {
     word-wrap: normal;
   }
 }
+
+@media (min-width: 1200px) {
+  :root,
+  html {
+    font-size: 28px;
+  }
+}
