@@ -10,7 +10,7 @@ export class List {
   async componentWillLoad() {
     const response: any = await contentClient.getEntries({
       content_type: "blogPost",
-      order: "sys.updatedAt",
+      order: "-sys.updatedAt",
     });
     this.posts = response.items.map((item) => {
       const imgId = item.fields?.heroImage?.sys?.id;
