@@ -1,4 +1,17 @@
 blog-single {
   display: block;
   margin-bottom: $spacer * 6;
+  .blog-content {
+    img {
+      width: 100%;
+    }
+    ul,
+    ol {
+      margin-top: $spacer;
+      ul,
+      ol {
+        margin-top: $spacer;
+      }
+    }
+  }
 }

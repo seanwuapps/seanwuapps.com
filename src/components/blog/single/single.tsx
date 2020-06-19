@@ -60,7 +60,7 @@ export class Single {
           <h1>{this.post.fields.title}</h1>
         </page-title>
         <div class="container">
-          <div innerHTML={this.post.renderedBody}></div>
+          <div class="blog-content" innerHTML={this.post.renderedBody}></div>
         </div>
       </Host>
     );
