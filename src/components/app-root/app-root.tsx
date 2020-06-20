@@ -1,5 +1,6 @@
 import { Component, h } from "@stencil/core";
 import "soft-components";
+
 @Component({
   tag: "app-root",
   styleUrl: "app-root.scss",
