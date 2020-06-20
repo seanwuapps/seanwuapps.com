@@ -1,7 +1,7 @@
 import { Component, Host, h, Prop, State } from "@stencil/core";
 import { contentClient } from "../../../helpers/contentful";
 // import marked from "marked";
-import { BLOCKS } from "@contentful/rich-text-types";
+import { BLOCKS, INLINES } from "@contentful/rich-text-types";
 import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
 
 @Component({
@@ -18,6 +18,12 @@ export class Single {
 
   private options = {
     renderNode: {
+      [INLINES.HYPERLINK]: (node, next) => {
+        const isExternal = /^(?:[a-z]+:)?\/\//i.test(node.data.uri);
+        return `<a href="${node.data.uri}" ${
+          isExternal ? `target="_blank" rel="noreferrer"` : null
+        }>${next(node.content)}</a>`;
+      },
       [BLOCKS.EMBEDDED_ASSET]: (node) => {
         if (!this.includes) {
           return;
@@ -61,6 +67,7 @@ export class Single {
           this.options
         );
         this.post = post;
+        console.log({ post });
       })
       .then(() => {
         this.loading = false;
