@@ -15,7 +15,7 @@
     "deploy": "firebase deploy"
   },
   "devDependencies": {
-    "@stencil/core": "^1.16.4",
+    "@stencil/core": "^1.17.3",
     "@stencil/helmet": "^0.3.2",
     "@stencil/postcss": "^1.0.1",
     "@stencil/router": "^1.0.1",
@@ -23,8 +23,8 @@
     "@types/autoprefixer": "^9.7.2",
     "@types/jest": "25.2.3",
     "@types/puppeteer": "2.0.1",
-    "autoprefixer": "^9.8.5",
-    "firebase-tools": "^8.6.0",
+    "autoprefixer": "^9.8.6",
+    "firebase-tools": "^8.7.0",
     "jest": "26.0.1",
     "jest-cli": "26.0.1",
     "postcss-pxtorem": "^5.1.1",
@@ -35,7 +35,7 @@
   "license": "MIT",
   "dependencies": {
     "@contentful/rich-text-html-renderer": "^14.1.1",
-    "contentful": "^7.14.5",
+    "contentful": "^7.14.6",
     "flexboxgrid": "^6.3.1",
     "marked": "^1.1.1",
     "normalize.css": "^8.0.1",
