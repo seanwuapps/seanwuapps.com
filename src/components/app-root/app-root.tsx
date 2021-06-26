@@ -83,7 +83,7 @@ export class AppRoot {
               <div class="col">
                 {/* youtube */}
                 <sc-button
-                  href="https://github.com/seanwuapps"
+                  href="https://www.youtube.com/channel/UCPDcvDTJvV0DBRnUatHaOgA"
                   target="_blank"
                   rel="noreferrer"
                   icon
@@ -98,20 +98,6 @@ export class AppRoot {
                 </sc-button>
               </div>
               <div class="col">
-                {/* codepen */}
-                <sc-button
-                  href="https://codepen.io/deseanwu"
-                  target="_blank"
-                  rel="noreferrer"
-                  icon
-                >
-                  <svg viewBox="0 0 32 32">
-                    <title>Codepen</title>
-                    <path d="M16 2.84375l-.5625.375-12 8.03125L3 11.53125v8.9375l.4375.28125 12 8.03125.5625.375.5625-.375 12-8.03125.4375-.28125v-8.9375l-.4375-.28125-12-8.03125zm-1 3.0625v5.4375L9.84375 14.8125 5.8125 12.09375zm2 0l9.1875 6.1875-4.03125 2.71875L17 11.34375zm-1 7.1875L20.34375 16 16 18.90625 11.65625 16zM5 13.9375L8.0625 16 5 18.0625zm22 0v4.125L23.9375 16zm-17.125 3.25L15 20.65625v5.4375l-9.1875-6.1875zm12.25 0l4.0625 2.71875L17 26.09375v-5.4375z" />
-                  </svg>
-                </sc-button>
-              </div>
-              <div class="col">
                 {/* linkedin */}
                 <sc-button
                   href="https://www.linkedin.com/in/deseanwu"
@@ -122,6 +108,20 @@ export class AppRoot {
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                     <title>LinkedIn</title>
                     <path d="M8.6425781 4C7.1835781 4 6 5.181625 6 6.640625s1.182625 2.6679688 2.640625 2.6679688 2.642578-1.2089688 2.642578-2.6679688C11.283203 5.182625 10.101578 4 8.6425781 4zm12.8925779 7c-2.219 0-3.488656 1.160453-4.097656 2.314453h-.064453v-2.003906H13V26h4.556641v-7.271484c0-1.916.144625-3.767578 2.515625-3.767578 2.337-.000001 2.371093 2.184671 2.371093 3.888671V26H27v-8.068359C27 13.983641 26.151156 11 21.535156 11zm-15.1718748.310547V26h4.5605468V11.310547H6.3632812z" />
+                  </svg>
+                </sc-button>
+              </div>
+              <div class="col">
+                {/* codepen */}
+                <sc-button
+                  href="https://codepen.io/deseanwu"
+                  target="_blank"
+                  rel="noreferrer"
+                  icon
+                >
+                  <svg viewBox="0 0 32 32">
+                    <title>Codepen</title>
+                    <path d="M16 2.84375l-.5625.375-12 8.03125L3 11.53125v8.9375l.4375.28125 12 8.03125.5625.375.5625-.375 12-8.03125.4375-.28125v-8.9375l-.4375-.28125-12-8.03125zm-1 3.0625v5.4375L9.84375 14.8125 5.8125 12.09375zm2 0l9.1875 6.1875-4.03125 2.71875L17 11.34375zm-1 7.1875L20.34375 16 16 18.90625 11.65625 16zM5 13.9375L8.0625 16 5 18.0625zm22 0v4.125L23.9375 16zm-17.125 3.25L15 20.65625v5.4375l-9.1875-6.1875zm12.25 0l4.0625 2.71875L17 26.09375v-5.4375z" />
                   </svg>
                 </sc-button>
               </div>
