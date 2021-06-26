@@ -12,15 +12,17 @@ page-home {
       width: auto;
       display: inline-block;
       max-width: 80%;
+      backdrop-filter: blur(15px);
 
       &.right {
         margin-left: auto;
+        --sc-card-bg-color: #{rgba(c("darkblue"), 0.5)};
         --sc-border-radius: var(--bubble-bigger-radius)
           var(--bubble-bigger-radius) var(--bubble-small-radius)
           var(--bubble-bigger-radius);
       }
       &.left {
-        --sc-card-bg-color: var(--color-blue);
+        --sc-card-bg-color: #{rgba(c("blue"), 0.2)};
         --sc-border-radius: var(--bubble-bigger-radius)
           var(--bubble-bigger-radius) var(--bubble-bigger-radius)
           var(--bubble-small-radius);

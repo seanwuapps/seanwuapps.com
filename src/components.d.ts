@@ -27,6 +27,8 @@ export namespace Components {
     interface FancyName {
         "url"?: string;
     }
+    interface MainBg {
+    }
     interface PageAbout {
     }
     interface PageHome {
@@ -77,6 +79,12 @@ declare global {
         prototype: HTMLFancyNameElement;
         new (): HTMLFancyNameElement;
     };
+    interface HTMLMainBgElement extends Components.MainBg, HTMLStencilElement {
+    }
+    var HTMLMainBgElement: {
+        prototype: HTMLMainBgElement;
+        new (): HTMLMainBgElement;
+    };
     interface HTMLPageAboutElement extends Components.PageAbout, HTMLStencilElement {
     }
     var HTMLPageAboutElement: {
@@ -125,6 +133,7 @@ declare global {
         "blog-single": HTMLBlogSingleElement;
         "fade-in": HTMLFadeInElement;
         "fancy-name": HTMLFancyNameElement;
+        "main-bg": HTMLMainBgElement;
         "page-about": HTMLPageAboutElement;
         "page-home": HTMLPageHomeElement;
         "page-loading": HTMLPageLoadingElement;
@@ -156,6 +165,8 @@ declare namespace LocalJSX {
     interface FancyName {
         "url"?: string;
     }
+    interface MainBg {
+    }
     interface PageAbout {
     }
     interface PageHome {
@@ -180,6 +191,7 @@ declare namespace LocalJSX {
         "blog-single": BlogSingle;
         "fade-in": FadeIn;
         "fancy-name": FancyName;
+        "main-bg": MainBg;
         "page-about": PageAbout;
         "page-home": PageHome;
         "page-loading": PageLoading;
@@ -198,6 +210,7 @@ declare module "@stencil/core" {
             "blog-single": LocalJSX.BlogSingle & JSXBase.HTMLAttributes<HTMLBlogSingleElement>;
             "fade-in": LocalJSX.FadeIn & JSXBase.HTMLAttributes<HTMLFadeInElement>;
             "fancy-name": LocalJSX.FancyName & JSXBase.HTMLAttributes<HTMLFancyNameElement>;
+            "main-bg": LocalJSX.MainBg & JSXBase.HTMLAttributes<HTMLMainBgElement>;
             "page-about": LocalJSX.PageAbout & JSXBase.HTMLAttributes<HTMLPageAboutElement>;
             "page-home": LocalJSX.PageHome & JSXBase.HTMLAttributes<HTMLPageHomeElement>;
             "page-loading": LocalJSX.PageLoading & JSXBase.HTMLAttributes<HTMLPageLoadingElement>;
