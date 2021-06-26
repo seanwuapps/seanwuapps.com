@@ -16,19 +16,19 @@ export class Home {
     },
     {
       side: "right",
-      html: `<p>💻 I'm a web developer in <a href="https://brandinsider.straitstimes.com/visitcanberra/8-interesting-facts-about-australias-capital-city/" target="_blank" rel="noreferrer">🗺️Canberra, Australia</a>.</p>`,
+      html: `<p>💻 I'm a <a href="/about">full-stack web developer</a> in 🗺️Canberra, Australia.</p>`,
     },
     {
       side: "right",
-      html: `<p>🏢 I facilitate a development team here...</p>`,
+      html: `<p>🎥 I make YouTube videos about the web industry by interviewing the <a href="https://www.youtube.com/channel/UCPDcvDTJvV0DBRnUatHaOgA" target="_blank" rel="noreferrer">Stars Behind The Browser</a>.</p>`,
+    },
+    {
+      side: "left",
+      html: `<p>You're really not good at knock-knock jokes, y'know</p>`,
     },
     {
       side: "right",
-      html: `<p class="text-center"><a href="https://cordelta.digital" target="_blank" rel="noreferrer"><img class="cd-logo" src="/assets/img/cd-logo.svg" alt="Cordelta Digital"></a></p>`,
-    },
-    {
-      side: "right",
-      html: `<p>😅 Oh! Did I mention I'm not good at knock knock jokes?</p>`,
+      html: `<p>😅 Yeah, I know, sorry, I'm a dad.</p>`,
     },
   ];
 

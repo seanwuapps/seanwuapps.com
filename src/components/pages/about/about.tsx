@@ -41,18 +41,35 @@ export class About {
                   <stencil-route-link url="/projects">
                     cool shit that's also useful
                   </stencil-route-link>{" "}
-                  and I{" "}
-                  <a
-                    href="http://playground.cordelta.digital/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    encourage others around me to do the same
-                  </a>
-                  .
+                  and I love learning from others.
+                </p>
+              </fade-in>
+              <fade-in offsetPx={200} withScroll up revert>
+                <p>
+                  Because of that, I consider myself a bit of a "Jack of all
+                  trades, master of none"...
                 </p>
               </fade-in>
             </div>
+          </div>
+        </div>
+        <div class="spacer-3"></div>
+        <div class="row">
+          <div class="col-12 col-md-8 offset-md-3 col-lg-7 offset-lg-4">
+            <fade-in offsetPx={200} withScroll left revert>
+              <h2>Experiences</h2>
+            </fade-in>
+            <fade-in offsetPx={200} withScroll up revert>
+              <p>
+                My experiences varies a whole lot, from building indie mobile
+                apps to leading teams to deliver large enterprise web
+                applications used by millions of users.
+              </p>
+              <p>
+                I have a passion for web components and design systems. I know
+                it doesn't seem so but it requires a lot of effort to get right.
+              </p>
+            </fade-in>
           </div>
         </div>
         <div class="spacer-3"></div>
@@ -66,6 +83,9 @@ export class About {
         <div class="container neg-spacing-6">
           <div class="row">
             <div class="col-12 col-md-8 offset-md-3 col-lg-7 offset-lg-4">
+              <fade-in offsetPx={200} withScroll right revert>
+                <h2>Getting more personal</h2>
+              </fade-in>
               <fade-in offsetPx={200} withScroll up revert>
                 <p>
                   I grew up in <em>Beijing, China</em> 🐼 and moved to{" "}
@@ -94,8 +114,8 @@ export class About {
             <div class="col-12 col-md-8 col-lg-7">
               <fade-in offsetPx={200} withScroll up revert>
                 <p>
-                  I'm one lucky bastard. Why? Because I got married with an
-                  amazing woman who's as smart as she is beautiful.
+                  I got married with an amazing woman who's as smart as she is
+                  beautiful.
                 </p>
               </fade-in>
               <fade-in offsetPx={200} withScroll up revert>
@@ -127,7 +147,7 @@ export class About {
           <div class="row">
             <div class="col-12">
               <fade-in offsetPx={200} withScroll right revert>
-                <h3>More about me?</h3>
+                <h2>Still want more?</h2>
                 <p>Follow these guys 👇 </p>
               </fade-in>
             </div>

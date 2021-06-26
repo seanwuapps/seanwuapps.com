@@ -6,12 +6,12 @@ page-home {
       --sc-card-outer-padding-y: 12px;
       --sc-card-inner-padding-x: 0px;
       --sc-card-inner-padding-y: 0px;
-      margin-bottom: 22px;
+      --bubble-bigger-radius: clamp(6px, 2vw, 40px);
+      --bubble-small-radius: 2px;
+      margin-bottom: 32px;
       width: auto;
       display: inline-block;
       max-width: 80%;
-      --bubble-bigger-radius: 20px;
-      --bubble-small-radius: 2px;
 
       &.right {
         margin-left: auto;
