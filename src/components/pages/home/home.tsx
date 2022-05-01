@@ -24,11 +24,11 @@ export class Home {
     },
     {
       side: "left",
-      html: `<p>You're really not good at knock-knock jokes, y'know</p>`,
+      html: `<p>You're not good at knock-knock jokes, y'know</p>`,
     },
     {
       side: "right",
-      html: `<p>😅 Yeah, I know, sorry, I'm a dad.</p>`,
+      html: `<p>😅 Yeah, I know, I'm a dad.</p>`,
     },
   ];
 
